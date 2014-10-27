@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>WireIt - CrimeLayers example</title>
+
+<!-- YUI -->
+<link rel="stylesheet" type="text/css" href="css/reset-fonts-grids.css" />
+<link rel="stylesheet" type="text/css" href="css/skin.css" />
+
+<!-- InputEx CSS -->
+<link type='text/css' rel='stylesheet' href='css/inputEx.css' />
+
+<!-- YUI-accordion CSS -->
+<link rel="stylesheet" type="text/css" href="css/accordionview.css" />
+
+<!-- WireIt CSS -->
+<link rel="stylesheet" type="text/css" href="css/WireIt.css" />
+<link rel="stylesheet" type="text/css" href="css/WireItEditor.css" />
+
+<style>
+div.WireIt-Container-closebutton { top: -16px; }
+div.WireIt-ImageContainer div.body { width: 85px; }
+
+.WiringEditor-module span { display: none; }
+.WiringEditor-module { float: left; }
+</style>
+
+<!-- Libs -->
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/resize-min.js"></script>
+<script type="text/javascript" src="js/layout-min.js"></script>
+<script type="text/javascript" src="js/container-min.js"></script>
+<script type="text/javascript" src="js/json-min.js"></script>
+<script type="text/javascript" src="js/button-min.js"></script>
+<script type="text/javascript" src="js/tabview-min.js"></script>
+<script type="text/javascript" src="js/accordionview-min.js"></script>
+<script type="text/javascript" src="js/excanvas.js"></script>
+
+
+<!-- WireIt -->
+<script type="text/javascript" src="js/wireit-inputex-editor-min.js"></script>
+<script type="text/javascript" src="json-rpc.js"></script>
+<script type="text/javascript" src="crimeLayers.js"></script>
+</head>
+
+<body class="yui-skin-sam">
+
+	<div id="top">
+		<div class="logo">WireIt WiringEditor - crime layers demo</a></div>
+		<div id="toolbar"></div>
+	</div>
+
+	<!-- Left panel-->
+	<div id="left">
+
+		<!-- Accordion for module categories-->
+		 <ul id="modulesAccordionView">
+			<li>
+				<h2>Input Controls</h2>
+				<div>
+					<div id='module-category-input'></div>
+				</div>
+			</li>
+			<li>
+				<h2>Output Controls</h2>
+				<div>
+					<div id='module-category-output'></div>
+				</div>
+			</li>
+			<li>
+				<h2>Single hop module</h2>
+				<div>
+					<div id='module-category-singlehop'></div>
+				</div>
+			</li>
+			<li>
+				<h2>Multi hop module</h2>
+				<div>
+					<div id='module-category-multihop'></div>
+				</div>
+			</li>
+			<li>
+				<h2>Add-ons module</h2>
+				<div>
+					<div id='module-category-addon'></div>
+				</div>
+			</li>
+		</ul>
+
+	</div>
+
+	<div id="right">
+		<ul id="accordionView">
+			<li>
+				<h2>Properties</h2>
+				<div>
+					<div id="propertiesForm"></div>
+				</div>
+			</li>
+			<li>
+				<h2>Minimap</h2>
+				<div style='position: relative;'>
+					<div id="layerMap"></div>
+				</div>
+			</li>
+			<li>
+				<h2>Infos</h2>
+				<div>
+				  <div style="padding: 10px;">
+					<p>This example uses <i>FormContainers</i> to represent crime layers.</p>
+						<br />
+						<p><b>Drag and drop modules from the Module list</b> on the left to the working layer in the middle.</p>
+						<br />
+						<p><a href="crimeLayers.js" target="_new">Click here to view the language definition for this editor.</a></p>
+				  </div>
+				</div>
+			</li>
+	</div>
+
+	<div id="center">
+	</div>
+
+	<div id="helpPanel">
+	    <div class="hd">crimeLayers (WiringEditor example)</div>
+	    <div class="bd" style="text-align: left;">
+	        <p>This example uses <i>ImageContainers</i> to represent crime layers.</p>
+			<br />
+			<p><b>Drag and drop modules from the Module list</b> on the left to the working layer in the middle.</p>
+			<br />
+			<p><a href="crimeLayers.js" target="_new">Click here to view the language definition for this editor.</a></p>
+	    </div>
+	</div>
+</body>
+</html>
